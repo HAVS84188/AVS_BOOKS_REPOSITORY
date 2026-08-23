@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AVS Books Repository</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <h1>AVS Books Repository</h1>
+    </header>
+
+    <div class="container">
+        <h2>Library Collections</h2>
+        <div class="subject-grid">
+            <a href="maths.html" class="subject-card">Mathematics</a>
+            <a href="physics.html" class="subject-card">Physics</a>
+            <a href="chemistry.html" class="subject-card">Chemistry</a>
+        </div>
+
+        <div class="review-section">
+            <h2>Feedback & Requests</h2>
+            
+            <form action="https://formspree.io/f/mrpzvgkg" method="POST">
+                <div class="form-group">
+                    <input type="text" id="name" name="name" placeholder="Your Name" required>
+                </div>
+                <div class="form-group">
+                    <input type="email" id="email" name="email" placeholder="Your Email" required>
+                </div>
+                <div class="form-group">
+                    <textarea id="message" name="message" rows="4" placeholder="What problems did you face? What books should we add?" required></textarea>
+                </div>
+                <button type="submit" class="btn" style="width: 100%;">Submit to AVS Agencies</button>
+            </form>
+        </div>
+    </div>
+
+    <footer>
+        <p>Site developed by AVS Agencies | Owner: Mr. Atharva Veer Singh</p>
+    </footer>
+
+</body>
+</html>
