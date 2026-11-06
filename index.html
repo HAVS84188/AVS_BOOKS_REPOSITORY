@@ -3,7 +3,17 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>AVS Books Repository</title>
+    <title>AVS Books | NCERT, JEE &amp; Olympiad Books</title>
+    <meta name="description" content="Browse the AVS Books Repository for mathematics, physics, and chemistry books, including NCERT textbooks and JEE and Olympiad study resources.">
+    <meta name="robots" content="index, follow">
+    <meta name="theme-color" content="#ffffff">
+    <meta property="og:type" content="website">
+    <meta property="og:site_name" content="AVS Books Repository">
+    <meta property="og:title" content="AVS Books | NCERT, JEE &amp; Olympiad Books">
+    <meta property="og:description" content="Explore mathematics, physics, and chemistry books, including NCERT textbooks and JEE and Olympiad study resources.">
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:title" content="AVS Books | NCERT, JEE &amp; Olympiad Books">
+    <meta name="twitter:description" content="Explore mathematics, physics, and chemistry books, including NCERT textbooks and JEE and Olympiad study resources.">
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -12,17 +22,20 @@
         <h1>AVS Books Repository</h1>
     </header>
 
-    <div class="container">
-        <h2>Library Collections</h2>
-        <div class="subject-grid">
-            <a href="maths.html" class="subject-card">Mathematics</a>
-            <a href="physics.html" class="subject-card">Physics</a>
-            <a href="chemistry.html" class="subject-card">Chemistry</a>
-        </div>
+    <main class="container">
+        <h2>Books for Science and Mathematics Students</h2>
+        <p>Browse our collections of mathematics, physics, and chemistry books, including NCERT textbooks and resources for JEE and Olympiad preparation.</p>
+        <nav aria-label="Book collections">
+            <div class="subject-grid">
+                <a href="maths.html" class="subject-card">Mathematics</a>
+                <a href="physics.html" class="subject-card">Physics</a>
+                <a href="chemistry.html" class="subject-card">Chemistry</a>
+            </div>
+        </nav>
 
-        <div class="review-section">
-            <h2>Feedback & Requests</h2>
-            
+        <section class="review-section" aria-labelledby="feedback-heading">
+            <h2 id="feedback-heading">Feedback &amp; Requests</h2>
+
             <form action="https://formspree.io/f/mrpzvgkg" method="POST">
                 <div class="form-group">
                     <input type="text" id="name" name="name" placeholder="Your Name" required>
@@ -35,8 +48,8 @@
                 </div>
                 <button type="submit" class="btn" style="width: 100%;">Submit to AVS Agencies</button>
             </form>
-        </div>
-    </div>
+        </section>
+    </main>
 
     <footer>
         <p>Site developed by AVS Agencies | Owner: Mr. Atharva Veer Singh</p>
