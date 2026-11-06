@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://havs84188.github.io/AVS_BOOKS_REPOSITORY/sitemap.xml
