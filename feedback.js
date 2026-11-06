@@ -4,6 +4,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
     const submitButton = form.querySelector('button[type="submit"]');
     const status = document.createElement('p');
+    status.className = 'form-status';
     status.setAttribute('role', 'status');
     status.setAttribute('aria-live', 'polite');
     status.hidden = true;
@@ -13,6 +14,7 @@ document.addEventListener('DOMContentLoaded', () => {
         event.preventDefault();
         status.hidden = false;
         status.textContent = 'Sending your feedback…';
+        status.classList.remove('success', 'error');
         submitButton.disabled = true;
 
         try {
@@ -27,9 +29,11 @@ document.addEventListener('DOMContentLoaded', () => {
             }
 
             form.reset();
-            status.textContent = 'Thank you! Your feedback has been submitted.';
+            status.textContent = 'Thank you! Your feedback has been submitted successfully.';
+            status.classList.add('success');
         } catch (error) {
             status.textContent = 'Sorry, your feedback could not be submitted. Please try again.';
+            status.classList.add('error');
         } finally {
             submitButton.disabled = false;
         }
