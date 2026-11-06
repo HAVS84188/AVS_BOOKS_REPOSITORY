@@ -12,6 +12,8 @@ document.addEventListener('DOMContentLoaded', () => {
 
     form.addEventListener('submit', async event => {
         event.preventDefault();
+        if (!form.reportValidity()) return;
+
         status.hidden = false;
         status.textContent = 'Sending your feedback…';
         status.classList.remove('success', 'error');
@@ -25,7 +27,7 @@ document.addEventListener('DOMContentLoaded', () => {
             });
 
             if (!response.ok) {
-                throw new Error('The form service returned an error.');
+                throw new Error('Form submission failed');
             }
 
             form.reset();
