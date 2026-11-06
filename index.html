@@ -3,77 +3,57 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>AVS Books | NCERT, JEE &amp; Olympiad Study Books</title>
-    <meta name="description" content="Find mathematics, physics, and chemistry study books for school, JEE, and Olympiad preparation. Browse NCERT textbooks and curated subject collections from AVS Books.">
-    <meta name="google-site-verification" content="l6w9UYqKNciM2y-OGnUxU4Vyp-wyyRR3J_XUK4b41dw" />
+    <title>AVS Books | NCERT, JEE &amp; Olympiad Books</title>
+    <meta name="description" content="Browse the AVS Books Repository for mathematics, physics, and chemistry books, including NCERT textbooks and JEE and Olympiad study resources.">
     <meta name="robots" content="index, follow, max-image-preview:large">
     <meta name="theme-color" content="#ffffff">
     <link rel="canonical" href="https://havs84188.github.io/AVS_BOOKS_REPOSITORY/">
     <link rel="icon" href="favicon.svg" type="image/svg+xml">
-    <link rel="manifest" href="site.webmanifest">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <meta property="og:type" content="website">
     <meta property="og:site_name" content="AVS Books Repository">
-    <meta property="og:title" content="AVS Books | NCERT, JEE &amp; Olympiad Study Books">
-    <meta property="og:description" content="Browse mathematics, physics, and chemistry books for school, JEE, and Olympiad preparation.">
+    <meta property="og:title" content="AVS Books | NCERT, JEE &amp; Olympiad Books">
+    <meta property="og:description" content="Explore mathematics, physics, and chemistry books, including NCERT textbooks and JEE and Olympiad study resources.">
     <meta property="og:url" content="https://havs84188.github.io/AVS_BOOKS_REPOSITORY/">
     <meta name="twitter:card" content="summary">
-    <meta name="twitter:title" content="AVS Books | NCERT, JEE &amp; Olympiad Study Books">
-    <meta name="twitter:description" content="Browse mathematics, physics, and chemistry books for school, JEE, and Olympiad preparation.">
+    <meta name="twitter:title" content="AVS Books | NCERT, JEE &amp; Olympiad Books">
+    <meta name="twitter:description" content="Explore mathematics, physics, and chemistry books, including NCERT textbooks and JEE and Olympiad study resources.">
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
+
     <header>
         <h1>AVS Books Repository</h1>
     </header>
 
-    <main class="container">
-        <section aria-labelledby="welcome-heading">
-            <h2 id="welcome-heading">Study books for science and mathematics</h2>
-            <p>Explore curated mathematics, physics, and chemistry book collections for school studies, NCERT learning, JEE preparation, and Olympiad practice. Use each subject page to browse titles and find links to the listed resources.</p>
-        </section>
+    <div class="container">
+        <h2>Library Collections</h2>
+        <div class="subject-grid">
+            <a href="maths.html" class="subject-card">Mathematics</a>
+            <a href="physics.html" class="subject-card">Physics</a>
+            <a href="chemistry.html" class="subject-card">Chemistry</a>
+        </div>
 
-        <nav aria-label="Browse book collections">
-            <div class="subject-grid">
-                <a href="maths.html" class="subject-card" aria-label="Browse mathematics books for JEE and Olympiad preparation">
-                    Mathematics
-                    <span>Algebra, calculus, geometry, trigonometry, and Olympiad resources</span>
-                </a>
-                <a href="physics.html" class="subject-card" aria-label="Browse physics books for Classes 11 and 12, JEE, and Olympiad preparation">
-                    Physics
-                    <span>NCERT Class 11 and 12 books, problem-solving, and Olympiad resources</span>
-                </a>
-                <a href="chemistry.html" class="subject-card" aria-label="Browse chemistry books for Classes 11 and 12 and exam preparation">
-                    Chemistry
-                    <span>NCERT Class 11 and 12, physical chemistry, and organic chemistry</span>
-                </a>
-            </div>
-        </nav>
+        <div class="review-section">
+            <h2>Feedback &amp; Requests</h2>
 
-        <section class="review-section" aria-labelledby="feedback-heading">
-            <h2 id="feedback-heading">Feedback and book requests</h2>
-            <p>Let us know if a resource link needs attention or suggest a title for a collection.</p>
             <form action="https://formspree.io/f/mrpzvgkg" method="POST">
                 <div class="form-group">
-                    <label for="name">Your name</label>
-                    <input type="text" id="name" name="name" autocomplete="name" required>
+                    <input type="text" id="name" name="name" placeholder="Your Name" required>
                 </div>
                 <div class="form-group">
-                    <label for="email">Your email</label>
-                    <input type="email" id="email" name="email" autocomplete="email" required>
+                    <input type="email" id="email" name="email" placeholder="Your Email" required>
                 </div>
                 <div class="form-group">
-                    <label for="message">Feedback or book request</label>
-                    <textarea id="message" name="message" rows="4" required></textarea>
+                    <textarea id="message" name="message" rows="4" placeholder="What problems did you face? What books should we add?" required></textarea>
                 </div>
-                <button type="submit" class="btn" style="width: 100%;">Send feedback</button>
+                <button type="submit" class="btn" style="width: 100%;">Submit to AVS Agencies</button>
             </form>
-        </section>
-    </main>
+        </div>
+    </div>
 
     <footer>
         <p>Site developed by AVS Agencies | Owner: Mr. Atharva Veer Singh</p>
     </footer>
+
 </body>
 </html>
